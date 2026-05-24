@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -O2
-TARGET = nat_detect
-SRC = nat_detect.c
+TARGET = nattype
+SRC = src/nat-type.c
 BUILD_DIR = build
 
 all: $(BUILD_DIR)/$(TARGET)
