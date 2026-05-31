@@ -110,7 +110,8 @@ int main(int argc, char** argv) {
   /* Help */
   for (int i = 1; i < argc; ++i) {
     if (!strcmp(argv[i], "help") || !strcmp(argv[i], "--help")) {
-      printf("Usage: %s [stun server ip 1] [stun server ip 2]\n", argv[0]);
+      printf("Usage: %s [stun server addr 1] [stun server addr 2]\n", argv[0]);
+      printf("Public stun server: https://gist.github.com/mondain/b0ec1cf5f60ae726202e\n");
       return 0;
     }
   }
@@ -121,7 +122,7 @@ int main(int argc, char** argv) {
   if (argc > 1) {
     stun_server1 = argv[1];
     if (argc > 2) {
-      stun_server1 = argv[2];
+      stun_server2 = argv[2];
     }
   }
 
